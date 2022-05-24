@@ -1,5 +1,11 @@
+import { Container, Nav, Navbar } from "react-bootstrap"
+import MainLayout from "../components/MainLayout"
+
 export default function Index() {
   return (
-    <h1>Главная страница</h1>
+    <MainLayout>
+      <h1>Главная страница</h1>
+
+    </MainLayout>
   ) 
 }
