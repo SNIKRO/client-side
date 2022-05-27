@@ -1,0 +1,11 @@
+
+.wide {
+  height: 30px;
+}
+
+.test {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}

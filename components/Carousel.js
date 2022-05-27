@@ -1,13 +1,14 @@
 import { Carousel } from "react-bootstrap"
 import Image from "next/image"
-import mypic from "../public/2.jpg"
+import mypic from "../images/2.jpg"
+import "../styles/carousel.module.css"
 
 export default function MyCarousel() {
   return(
-  <Carousel variant="dark" interval="3000">
+  <Carousel variant="dark" interval="3000" >
     <Carousel.Item >
       <Image
-        className="d-block w-100 "
+        className="d-block test img-fluid"
         src= { mypic }
         alt="First slide"
       />
@@ -18,7 +19,7 @@ export default function MyCarousel() {
     </Carousel.Item>
     <Carousel.Item>
       <Image
-        className="d-block w-100"
+        className="d-block img-fluid"
         src= { mypic }
         alt="Second slide"
       />
@@ -29,7 +30,7 @@ export default function MyCarousel() {
     </Carousel.Item>
     <Carousel.Item>
       <Image
-        className="d-block w-100"
+        className="d-block img-fluid"
         src= { mypic }
         alt="Third slide"
       />

@@ -1,5 +1,6 @@
 .h1 {
   color: #fff;
+  padding-left: 0;
 }
 .nav {
   position: fixed;
@@ -9,14 +10,20 @@
   right: 0;
   background: darkblue;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+
 }
 .nav a {
   color: #fff;
   text-decoration: none;
+  margin-left: 100px;
 }
 .main {
   margin-top: 60px;
   padding: 1rm;
+}
+
+.image {
+  background-color: #fff;
+  padding-right: 0;
 }
