@@ -1,5 +1,4 @@
 import MainLayout from "../components/MainLayout"
-import 'bootstrap/dist/css/bootstrap.css'
 import MyCarousel from "../components/Carousel"
 import Image from "next/image"
 import mag  from "../images/mag.png"
