@@ -4,14 +4,28 @@ import Image from "next/image"
 import mag  from "../images/mag.png"
 import asspirant  from "../images/asspirant.png"
 import baklawr  from "../images/baklawr.png"
+import { useState } from "react"
+import ModalWindow from "../components/ModalWindow"
+import styles from "../styles/main.module.css"
 
 
 export default function Index() {
+
+  const [showModal, setShowModal] = useState(false)
+
+  function onImageClick() {
+    setShowModal(true)
+  }
+  function closeModal() {
+    setShowModal(false)
+  }
+
+
   return (
   <MainLayout>
     <MyCarousel />
-      <div className="row text-center">
-          <div className="col-md-4">
+      <div className="row text-center ">
+          <div className={`col-md-4 ${styles.hover}`} onClick={onImageClick}>
             <Image
               className="col-md-4"
               src={ baklawr }
@@ -21,7 +35,7 @@ export default function Index() {
             />
             <p>Бакалавриат</p>
           </div>
-        <div className="col-md-4">
+        <div className={`col-md-4 ${styles.hover}`}>
             <Image
               className="col-md-4"
               src={ mag }
@@ -31,7 +45,7 @@ export default function Index() {
             />
             <p>Магистратура</p>
         </div>
-        <div className="col-md-4">
+        <div className={`col-md-4 ${styles.hover}`}>
             <Image
                 className="col-md-4"
                 src={ asspirant }
@@ -42,6 +56,7 @@ export default function Index() {
               <p>Аспирантура</p>
         </div>
       </div>
+      <ModalWindow show={ showModal } close= {closeModal} />
   </MainLayout>
   )
 }

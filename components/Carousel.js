@@ -1,7 +1,7 @@
 import { Carousel } from "react-bootstrap"
 import Image from "next/image"
 import mypic from "../images/2.jpg"
-import "../styles/carousel.module.css"
+import styles from "../styles/carousel.module.css"
 
 export default function MyCarousel() {
   return(
