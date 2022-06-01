@@ -24,8 +24,8 @@ export default function Index() {
   return (
   <MainLayout>
     <MyCarousel />
-      <div className="row text-center ">
-          <div className={`col-md-4 ${styles.hover}`} onClick={onImageClick}>
+      <div className={`row text-center`}>
+          <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`} onClick={onImageClick}>
             <Image
               className="col-md-4"
               src={ baklawr }
@@ -35,7 +35,7 @@ export default function Index() {
             />
             <p>Бакалавриат</p>
           </div>
-        <div className={`col-md-4 ${styles.hover}`}>
+        <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`}>
             <Image
               className="col-md-4"
               src={ mag }
@@ -45,7 +45,7 @@ export default function Index() {
             />
             <p>Магистратура</p>
         </div>
-        <div className={`col-md-4 ${styles.hover}`}>
+        <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`}>
             <Image
                 className="col-md-4"
                 src={ asspirant }
