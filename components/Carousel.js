@@ -5,10 +5,10 @@ import styles from "../styles/carousel.module.css"
 
 export default function MyCarousel() {
   return(
-  <Carousel variant="dark" interval="3000" className={styles.carousel}>
+  <Carousel variant="dark" interval="3000" className={ `300-px-wide ${styles.carousel}`}>
     <Carousel.Item className={styles.item}>
       <Image 
-        className={`d-block test img-fluid ${styles.img}`}
+        className={`d-block test ${styles.img}`}
         src= { mypic }
         alt="First slide"
       />
@@ -19,19 +19,19 @@ export default function MyCarousel() {
     </Carousel.Item>
     <Carousel.Item className={styles.item}>
       <Image
-        className={`d-block test img-fluid ${styles.img}`}
+        className={`d-block test ${styles.img}`}
         src= { mypic }
         alt="Second slide"
         sizes="300px"
       />
-      <Carousel.Caption>
+      <Carousel.Caption >
         <h5>Second slide label</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item className={styles.item}>
       <Image
-        className={`d-block test img-fluid ${styles.img}`}
+        className={`d-block test  ${styles.img}`}
         src= { mypic }
         alt="Third slide"
       />

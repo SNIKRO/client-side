@@ -22,41 +22,41 @@ export default function Index() {
 
 
   return (
-  <MainLayout>
-    <MyCarousel />
-      <div className={`row text-center`}>
-          <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`} onClick={onImageClick}>
-            <Image
-              className="col-md-4"
-              src={ baklawr }
-              alt="Бакалавриат" 
-              width={100}
-              height={100}
-            />
-            <p>Бакалавриат</p>
-          </div>
-        <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`}>
-            <Image
-              className="col-md-4"
-              src={ mag }
-              alt="Магистратура" 
-              width={100}
-              height={100}
-            />
-            <p>Магистратура</p>
-        </div>
-        <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`}>
-            <Image
+    <>
+      <MyCarousel />
+        <div className={`row text-center`}>
+            <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`} onClick={onImageClick}>
+              <Image
                 className="col-md-4"
-                src={ asspirant }
-                alt="Аспирантура" 
+                src={ baklawr }
+                alt="Бакалавриат" 
                 width={100}
                 height={100}
               />
-              <p>Аспирантура</p>
+              <p>Бакалавриат</p>
+            </div>
+          <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`}>
+              <Image
+                className="col-md-4"
+                src={ mag }
+                alt="Магистратура" 
+                width={100}
+                height={100}
+              />
+              <p>Магистратура</p>
+          </div>
+          <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`}>
+              <Image
+                  className="col-md-4"
+                  src={ asspirant }
+                  alt="Аспирантура" 
+                  width={100}
+                  height={100}
+                />
+                <p>Аспирантура</p>
+          </div>
         </div>
-      </div>
-      <ModalWindow show={ showModal } close= {closeModal} />
-  </MainLayout>
+        <ModalWindow show={ showModal } close= {closeModal} />
+    </>
   )
 }

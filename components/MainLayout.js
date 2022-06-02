@@ -10,9 +10,6 @@ export default function MainLayout({ children }) {
     <>
     <Head>
       <title>IVT SITE</title>
-      <meta name='keywords' content='next, javascript, nextjs, react' />
-      <meta name='description' content='tets work on next' />
-      <meta charSet='utf-8' />
     </Head>
       <nav className={ styles.nav }>
         <Image
