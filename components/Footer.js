@@ -7,7 +7,7 @@ import yt from "../images/social/youtube.png"
 
 export default function Footer() {
   return (
-      <div className= {`row text-center ${style.allContainer}`}>
+      <div className= "row text-center">
         <div className="col-md-4">
               <Image
                 className= {`col-md-4 ${style.img}`}

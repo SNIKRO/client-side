@@ -8,6 +8,7 @@ export default function MyApp({ Component, pageProps}) {
   return(
     <>
       <Head>
+        <title>IVT SITE</title>
         <meta name='keywords' content='OmGTU, ОмГТУ, Политех, Омский государственный технический университет, ИВТ, Информатика и вычислительная техника' />
         <meta name='description' content='Сайт кафедры информатика и вычислительная техника' />
         <meta charSet='utf-8' />
