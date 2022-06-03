@@ -16,10 +16,9 @@ export default function MainLayout({ children }) {
           alt="Логотип ОмГТУ"
           height={55}
           width={ 150 }
-        />{' '}
-        Информатика и вычислительная техника
+        />
+         Информатика и вычислительная техника
       </Navbar.Brand>
-
       <Navbar.Toggle aria-controls='responsive-navbar-nav' />
       <Navbar.Collapse id='responsive-navbar-nav'>
         <Nav className='mr-auto'>
@@ -28,18 +27,6 @@ export default function MainLayout({ children }) {
         </Nav>  
       </Navbar.Collapse>
     </Navbar>
-      {/* <nav className={ styles.nav }>
-        <Image
-        className={ styles.image }
-        src={ logo }
-        alt="Логотип ОмГТУ"
-        height={55}
-        width={ 150 }
-        />
-        <h1 className={ styles.h1 }>Информатика и вычислительная техника </h1>
-          <Link href={"/"}><a>ГЛАВНАЯ СТРАНИЦА</a></Link>
-          <Link href={"/about"}><a>О НАС</a></Link>
-      </nav> */}
       <main className={ styles.main }>
         {children}
       </main>

@@ -8,7 +8,7 @@ export default function MyCarousel() {
   <Carousel variant="dark" interval="3000" className={ `300-px-wide ${styles.carousel}`}>
     <Carousel.Item className={styles.item}>
       <Image 
-        className={`d-block test ${styles.img}`}
+        className={`d-block ${styles.img}`}
         src= { mypic }
         alt="First slide"
       />
