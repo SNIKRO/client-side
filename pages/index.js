@@ -1,9 +1,7 @@
-import MainLayout from "../components/MainLayout"
+import MainLayout from "../components/Header"
 import MyCarousel from "../components/Carousel"
 import Image from "next/image"
-import mag  from "../images/mag.png"
-import asspirant  from "../images/asspirant.png"
-import baklawr  from "../images/baklawr.png"
+import student  from "../images/student.png"
 import { useState } from "react"
 import ModalWindow from "../components/ModalWindow"
 import styles from "../styles/main.module.css"
@@ -28,30 +26,30 @@ export default function Index() {
             <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`} onClick={onImageClick}>
               <Image
                 className="col-md-4"
-                src={ baklawr }
+                src={ student }
                 alt="Бакалавриат" 
-                width={100}
-                height={100}
+                width={75}
+                height={75}
               />
               <p>Бакалавриат</p>
             </div>
           <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`}>
               <Image
                 className="col-md-4"
-                src={ mag }
+                src={ student }
                 alt="Магистратура" 
-                width={100}
-                height={100}
+                width={75}
+                height={75}
               />
               <p>Магистратура</p>
           </div>
           <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`}>
               <Image
                   className="col-md-4"
-                  src={ asspirant }
+                  src={ student }
                   alt="Аспирантура" 
-                  width={100}
-                  height={100}
+                  width={75}
+                  height={75}
                 />
                 <p>Аспирантура</p>
           </div>

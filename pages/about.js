@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Button, Card, Carousel, Container, Nav, Navbar } from "react-bootstrap"
-import MainLayout from "../components/MainLayout"
+import MainLayout from "../components/Header"
 
 export default function About() {
   return(

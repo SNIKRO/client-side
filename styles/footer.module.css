@@ -3,6 +3,10 @@
   color: #fff;
 }
 
+.hover:hover{
+  cursor: pointer;
+}
+
 .img{
   width: fit-content;
   margin-left: auto;

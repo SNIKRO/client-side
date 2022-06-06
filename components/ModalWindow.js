@@ -2,7 +2,7 @@ import { Modal } from "react-bootstrap";
 
 export default function ModalWindow({show, close}) {
   return (
-    <Modal show={show} onHide={close}>
+    <Modal show={show} onHide={close} centered="true">
       <Modal.Header closeButton>
         <Modal.Title>TEST</Modal.Title>
       </Modal.Header>
