@@ -16,6 +16,10 @@ a {
   box-sizing: border-box;
 }
 
+p{
+  font-family: 'Oswald', sans-serif;
+}
+
 .navbar{
   font-family: 'Oswald', sans-serif;
 }

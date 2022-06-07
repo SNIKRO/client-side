@@ -7,34 +7,36 @@ import yt from "../images/social/youtube.png"
 
 export default function Footer() {
   return (
-    <div className="row text-center">
-      <div className="col-md-4">
+    <>
+      <div className="row text-center">
+          <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`}>
             <Image
-              className= {`col-md-4 ${styles.hover} ${styles.imageDiv}`}
+              className="col-md-4"
               src={ vk }
               alt="Вконтакте" 
               width={75}
               height={75}
             />
-      </div>
-      <div className="col-md-4">
+          </div>
+        <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`}>
             <Image
-              className= {`col-md-4 ${styles.hover} ${styles.imageDiv}`}
+              className="col-md-3"
               src={ tg }
               alt="Телеграм" 
               width={75}
               height={75}
             />
-      </div>
-      <div className="col-md-4">
+        </div>
+        <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`}>
             <Image
-              className= {`col-md-4 ${styles.hover} ${styles.imageDiv}`}
-              src={ yt }
-              alt="YouTube" 
-              width={75}
-              height={75}
-            />
-       </div>
-    </div>
+                className="col-md-4"
+                src={ yt }
+                alt="YouTube" 
+                width={75}
+                height={75}
+              />
+        </div>
+      </div>
+    </>
   )
 }

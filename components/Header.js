@@ -24,7 +24,7 @@ export default function MainLayout({ children }) {
           <Nav className='mr-auto'>
             <Nav.Link href='/'><h3>Главная страница</h3></Nav.Link>
             <Nav.Link href='/about'><h3>Кафедра</h3></Nav.Link>
-            <Nav.Link href='/partners'><h3></h3></Nav.Link>
+            <Nav.Link href='/partners'><h3>Наши Партнеры</h3></Nav.Link>
           </Nav>  
         </Navbar.Collapse>
       </Container>

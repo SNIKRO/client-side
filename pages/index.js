@@ -5,6 +5,7 @@ import student  from "../images/student.png"
 import { useState } from "react"
 import ModalWindow from "../components/ModalWindow"
 import styles from "../styles/main.module.css"
+import * as backlawr from "../BACK.json"
 
 
 export default function Index() {
@@ -22,7 +23,7 @@ export default function Index() {
   return (
     <>
       <MyCarousel />
-        <div className={`row text-center`}>
+        <div className= "row text-center">
             <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`} onClick={onImageClick}>
               <Image
                 className="col-md-4"
