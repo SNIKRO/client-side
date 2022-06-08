@@ -4,6 +4,7 @@ import styles from "../styles/footer.module.css"
 import vk from "../images/social/vkontakte.png"
 import tg from "../images/social/telegram.png"
 import yt from "../images/social/youtube.png"
+import Link from "next/link"
 
 export default function Footer() {
   return (

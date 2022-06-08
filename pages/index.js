@@ -1,24 +1,21 @@
-import MainLayout from "../components/Header"
 import MyCarousel from "../components/Carousel"
 import Image from "next/image"
 import student  from "../images/student.png"
 import { useState } from "react"
 import ModalWindow from "../components/ModalWindow"
 import styles from "../styles/main.module.css"
-import * as backlawr from "../BACK.json"
 
 
-export default function Index() {
 
+export default function Index(data) {
   const [showModal, setShowModal] = useState(false)
 
-  function onImageClick() {
-    setShowModal(true)
+ async function onImageClick(event) {
+  setShowModal(true)
   }
   function closeModal() {
     setShowModal(false)
   }
-
 
   return (
     <>
@@ -34,7 +31,7 @@ export default function Index() {
               />
               <p>Бакалавриат</p>
             </div>
-          <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`}>
+          <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`} onClick={onImageClick} >
               <Image
                 className="col-md-4"
                 src={ student }
@@ -44,7 +41,7 @@ export default function Index() {
               />
               <p>Магистратура</p>
           </div>
-          <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`}>
+          <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`} onClick={onImageClick}>
               <Image
                   className="col-md-4"
                   src={ student }
@@ -55,7 +52,13 @@ export default function Index() {
                 <p>Аспирантура</p>
           </div>
         </div>
-        <ModalWindow show={ showModal } close= {closeModal} />
+        <ModalWindow show={ showModal } close= { closeModal }  data={data}/>
     </>
   )
+}
+
+Index.getInitialProps = async (ctx) => {
+  const results = await fetch("http://localhost:4200/backlawr")
+  const data = await results.json()
+  return data
 }
