@@ -4,14 +4,21 @@ import student  from "../images/student.png"
 import { useState } from "react"
 import ModalWindow from "../components/ModalWindow"
 import styles from "../styles/main.module.css"
+import { infoLoader } from "../src/loader"
 
 
 
-export default function Index(data) {
+export default  function Index(data) {
   const [showModal, setShowModal] = useState(false)
-
+  const [info, setInfo] = useState(data.backlawr)
  async function onImageClick(event) {
-  setShowModal(true)
+      if(event.target.alt === "Бакалавриат" ){
+        setInfo(data.backlawr)
+      }
+     if(event.target.alt === "Магистратура" ){
+        setInfo(data.mag)
+     }
+     setShowModal(true)
   }
   function closeModal() {
     setShowModal(false)
@@ -52,13 +59,16 @@ export default function Index(data) {
                 <p>Аспирантура</p>
           </div>
         </div>
-        <ModalWindow show={ showModal } close= { closeModal }  data={data}/>
+        <ModalWindow show={ showModal } close= { closeModal }  data={info} />
     </>
   )
 }
 
 Index.getInitialProps = async (ctx) => {
-  const results = await fetch("http://localhost:4200/backlawr")
-  const data = await results.json()
-  return data
+  const backlawr = await infoLoader("backlawr")
+  const mag = await infoLoader("mag")
+  return {
+      backlawr,
+      mag
+  }
 }

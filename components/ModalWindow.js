@@ -3,23 +3,7 @@ import styles from "../styles/modal.module.css"
 
 
 export default function ModalWindow( props ) {
-
-  // props.data.test.map(item => (
-    
-  // ))
-
-  // props.data.test.map(item => {
-  //   console.log(item)
-  // })
-  // for (const key in props.data.test) {
-  //   console.log(props.data.test[key])
-  //  }
-  // function list(){
-  //   for (const key in props.data.test) {
-  //    return <li>{props.data.test[key]}</li>
-  //   }
-  // }
-
+  console.log(props)
   return (
     <Modal show={ props.show } onHide={ props.close } centered="true">
       <Modal.Header >
