@@ -1,3 +1,6 @@
-.h3, .ul, .li{
+.h3, .ul, .li, .ol{
   font-family: 'Oswald', sans-serif;
+}
+.ul .li{
+  list-style-type: none;
 }

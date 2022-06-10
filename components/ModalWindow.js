@@ -25,7 +25,7 @@ export default function ModalWindow( props ) {
       <Modal.Header >
         <Modal.Title>
             <h3 className={`text-center ${styles.h3}`}>
-              { `Бакалавриат ${props.data.id}`}
+              { `${props.data.id}`}
             </h3>
             <h3 className={`text-center ${styles.h3}`}>
               {`${props.data.title} год`}
@@ -34,7 +34,7 @@ export default function ModalWindow( props ) {
       </Modal.Header>
     <Modal.Body>
     <p className="text-center">{props.data.total}</p>
-      <ol className={`${styles.l}`}>
+      <ol className={`${styles.ol}`}>
         {
           props.data.test.map(item => (
             <li key={item.id} className={`${styles.li}`}>
@@ -45,6 +45,14 @@ export default function ModalWindow( props ) {
           )
         }
       </ol>
+      <p className="text-center">{props.data.paymentTitle}</p>
+      <ul className={`text-center ${styles.ul}`}>
+        {
+          props.data.payment.map(item => (
+            <li key={item.id} className={`${styles.li}`}>{item.places}</li>
+          ))
+        }
+      </ul>
     </Modal.Body>
   </Modal>
   )
