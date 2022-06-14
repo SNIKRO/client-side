@@ -7,7 +7,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap'
 export default function MainLayout({ children }) {
   return (
     <>
-    <Navbar collapseOnSelect expand="md" bg="dark" variant='dark' fixed='top' >
+    <Navbar collapseOnSelect expand="md" bg='dark' variant='dark'>
       <Container className={ styles.center}>
         <Navbar.Brand href='https://omgtu.ru/' >
           <Image

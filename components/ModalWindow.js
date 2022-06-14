@@ -3,7 +3,6 @@ import styles from "../styles/modal.module.css"
 
 
 export default function ModalWindow( props ) {
-  console.log(props)
   return (
     <Modal show={ props.show } onHide={ props.close } centered="true">
       <Modal.Header >

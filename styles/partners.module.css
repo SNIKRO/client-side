@@ -1,0 +1,7 @@
+.font {
+  font-family:'Oswald', sans-serif;
+}
+
+.font:hover{
+  cursor: pointer;
+}
