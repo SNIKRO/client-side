@@ -1,9 +1,7 @@
 .hover:hover{
   cursor: pointer;
 }
-
-.imageDiv{
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+.imageDiv {
+  display: block;
+  margin: auto;
 }

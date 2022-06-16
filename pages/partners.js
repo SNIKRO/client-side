@@ -9,7 +9,7 @@ export default function Partners() {
           <Col sm={2} >
             <Nav variant="pills" className="flex-column mt-2">
               <Nav.Item> 
-                <Nav.Link eventKey="first" className={styles.font}>Партнер 1</Nav.Link>
+                <Nav.Link eventKey="first" className="font">Партнер 1</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="second" className={styles.font}>Партнер 2</Nav.Link>

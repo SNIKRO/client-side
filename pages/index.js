@@ -27,10 +27,11 @@ export default  function Index(data) {
   return (
     <>
       <MyCarousel />
+      <div className="container">
         <div className= "row text-center">
-            <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`} onClick={onImageClick}>
+            <div className={`col-md-2 align-center ${styles.hover} ${styles.imageDiv}`} onClick={onImageClick}>
               <Image
-                className="col-md-4"
+                className="col-md-2"
                 src={ student }
                 alt="Бакалавриат" 
                 width={75}
@@ -38,9 +39,9 @@ export default  function Index(data) {
               />
               <p>Бакалавриат</p>
             </div>
-          <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`} onClick={onImageClick} >
+          <div className={`col-md-2 align-center ${styles.hover} ${styles.imageDiv}`} onClick={onImageClick} >
               <Image
-                className="col-md-4"
+                className="col-md-2"
                 src={ student }
                 alt="Магистратура" 
                 width={75}
@@ -48,9 +49,9 @@ export default  function Index(data) {
               />
               <p>Магистратура</p>
           </div>
-          <div className={`col-md-4 ${styles.hover} ${styles.imageDiv}`} onClick={onImageClick}>
+          <div className={`col-md-2 align-center ${styles.hover} ${styles.imageDiv}`} onClick={onImageClick}>
               <Image
-                  className="col-md-4"
+                  className="col-md-2"
                   src={ student }
                   alt="Аспирантура" 
                   width={75}
@@ -59,6 +60,7 @@ export default  function Index(data) {
                 <p>Аспирантура</p>
           </div>
         </div>
+      </div>
         <ModalWindow show={ showModal } close= { closeModal }  data={info} />
     </>
   )
