@@ -10,7 +10,7 @@ export default function MyCarousel() {
   <Carousel variant="dark" interval="3000" className={`${styles.carousel}`}>
     <Carousel.Item className={styles.item}>
       <Image 
-        className={`d-block w-50  ${styles.img}`}
+        className={`d-block w-100  ${styles.img}`}
         src= { mypic1 }
         alt="First slide"
       />
@@ -21,7 +21,7 @@ export default function MyCarousel() {
     </Carousel.Item>
     <Carousel.Item className={styles.item}>
       <Image
-        className={`d-block w-50 ${styles.img}`}
+        className={`d-block w-100 ${styles.img}`}
         src= { mypic2 }
         alt="Second slide"
       />
@@ -32,7 +32,7 @@ export default function MyCarousel() {
     </Carousel.Item>
     <Carousel.Item className={styles.item}>
       <Image
-        className={`d-block w-50 ${styles.img}`}
+        className={`d-block w-100 ${styles.img}`}
         src= { mypic3 }
         alt="Third slide"
       />
