@@ -4,11 +4,12 @@ import vk from "../images/social/vkontakte.png"
 import tg from "../images/social/telegram.png"
 import yt from "../images/social/youtube.png"
 import Link from "next/link"
+import { Container } from "react-bootstrap"
 
 export default function Footer() {
   return (
-    <>
-    <div className="container">
+  <Container fluid className={styles.container}>
+    <div className= {`container ${styles.container}`}>
       <div className="row text-center">
           <div className={`col-md-2 align-center ${styles.hover} ${styles.imageDiv}`}>
             <Link href="https://vk.com/">
@@ -51,6 +52,6 @@ export default function Footer() {
         </div>
       </div>
     </div>
-    </>
+    </Container>
   )
 }
