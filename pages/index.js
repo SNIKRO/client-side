@@ -11,6 +11,8 @@ import { infoLoader } from "../src/loader"
 export default  function Index(data) {
   const [showModal, setShowModal] = useState(false)
   const [info, setInfo] = useState(data.backlawr)
+
+
  async function onImageClick(event) {
       if(event.target.alt === "Бакалавриат" ){
         setInfo(data.backlawr)
@@ -27,7 +29,12 @@ export default  function Index(data) {
   return (
     <>
       <MyCarousel />
-      <div className="container">
+      <div className="text-center mt-5">
+        <h3>
+            Кафедра ведёт набор студентов по следующим направлениям подготовки:
+        </h3>
+    </div>
+      <div className="container mt-5">
         <div className= "row text-center">
             <div className={`col-md-2 align-center ${styles.hover} ${styles.imageDiv}`} onClick={onImageClick}>
               <Image
@@ -61,6 +68,16 @@ export default  function Index(data) {
           </div>
         </div>
       </div>
+      <div className="container mt-5">
+        <h3 className="text-center">Основные изучаемые дисциплины:</h3>
+        <ul className={styles.ul}>
+        {
+          data.discp.map(item =>(
+            <li key={item.id} className={styles.li}><h5>{item.name}</h5></li>
+          ))
+        }
+        </ul>
+      </div>
         <ModalWindow show={ showModal } close= { closeModal }  data={info} />
     </>
   )
@@ -69,8 +86,10 @@ export default  function Index(data) {
 Index.getInitialProps = async (ctx) => {
   const backlawr = await infoLoader("backlawr")
   const mag = await infoLoader("mag")
+  const discp = await infoLoader("disciplines")
   return {
       backlawr,
-      mag
+      mag,
+      discp
   }
 }
