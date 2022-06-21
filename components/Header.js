@@ -8,7 +8,7 @@ export default function MainLayout({ children }) {
   return (
     <>
     <Navbar collapseOnSelect expand="md" bg='dark' variant='dark'>
-        <Navbar.Brand href='https://omgtu.ru/' >
+        <Navbar.Brand href='https://www.omgtu.ru/general_information/faculties/faculty_of_information_technology_and_computer_systems/department_of_computer_science_and_engineering/' >
           <Image
             className={`d-line-block ${styles.image}`}
             src={ logo }

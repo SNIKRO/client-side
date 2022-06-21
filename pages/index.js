@@ -9,6 +9,7 @@ import { infoLoader } from "../src/loader"
 
 
 export default  function Index(data) {
+
   const [showModal, setShowModal] = useState(false)
   const [info, setInfo] = useState(data.backlawr)
 

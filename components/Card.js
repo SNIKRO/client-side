@@ -1,13 +1,16 @@
 import { Card  } from "react-bootstrap"
+import Image from "next/image"
 
-export default function MyCard(data) {
+
+export default function MyCard(props) {
+  
   return(
-    <Card>
-      <Card.Img variant="top" src="holder.js/300x200" />
-      <Card.Body>
-        <Card.Title>Test Title</Card.Title>
+    <Card style={{ width:"18rem", marginBottom:'10px'}}>
+      <Card.Img variant="center" src={props.src} />
+      <Card.Body className="text-center">
+        <Card.Title>{props.name}</Card.Title>
         <Card.Text>
-          uishfbiasbh ushviuasbasfvuihouf oauhfjvpjsovhakib juasfviafvndfihj 
+          {props.title}
         </Card.Text>
       </Card.Body>
     </Card>

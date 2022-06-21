@@ -7,12 +7,13 @@ import styles from "../styles/carousel.module.css"
 
 export default function MyCarousel() {
   return(
-  <Carousel variant="dark" interval="3000" className={`${styles.carousel}`}>
+  <Carousel variant="dark" interval="2000" className={`${styles.carousel}`}>
     <Carousel.Item className={styles.item}>
       <Image 
         className={`d-block w-100  ${styles.img}`}
         src= { mypic1 }
         alt="First slide"
+        priority={true}
       />
       <Carousel.Caption> 
         <h5 className={styles.text}>First slide label</h5>
