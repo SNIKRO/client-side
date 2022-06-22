@@ -12,7 +12,7 @@ export default function Footer() {
     <div className= {`container ${styles.container}`}>
       <div className="row text-center">
           <div className={`col-md-2 align-center ${styles.hover} ${styles.imageDiv}`}>
-            <Link href="https://vk.com/">
+            <Link href="https://vk.com/department_of_computer_science">
               <a>
                 <Image
                   className="col-md-2"
