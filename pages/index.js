@@ -69,7 +69,7 @@ export default  function Index(data) {
           </div>
         </div>
       </div>
-      <div className="container mt-5">
+      <div className="container mt-3">
         <h3 className="text-center">Основные изучаемые дисциплины:</h3>
         <ul className={styles.ul}>
         {

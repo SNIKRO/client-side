@@ -8,7 +8,7 @@ import { Container } from "react-bootstrap"
 
 export default function Footer() {
   return (
-  <Container fluid className={styles.container}>
+  <Container fluid className={`fixed-bottom ${styles.container}`} >
     <div className= {`container ${styles.container}`}>
       <div className="row text-center">
           <div className={`col-md-2 align-center ${styles.hover} ${styles.imageDiv}`}>

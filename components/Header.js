@@ -24,6 +24,7 @@ export default function MainLayout({ children }) {
             <Nav.Link href='/'><h3>Главная страница</h3></Nav.Link>
             <Nav.Link href='/about'><h3>Кафедра</h3></Nav.Link>
             <Nav.Link href='/partners'><h3>Наши Партнеры</h3></Nav.Link>
+            <Nav.Link href='/contacts'><h3>Контакты</h3></Nav.Link>
           </Nav>  
         </Navbar.Collapse>
     </Navbar>

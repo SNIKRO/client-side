@@ -2,6 +2,9 @@ import Image from "next/image"
 import { SSRProvider } from "react-bootstrap"
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap"
 import styles from "../styles/partners.module.css"
+import COD from "../images/COD.png"
+import ISSArt from '../images/partners1.png'
+import Sigma from "../images/sigma.png"
 export default function Partners() {
   return(
     <SSRProvider>
@@ -11,16 +14,13 @@ export default function Partners() {
             <Col sm={2} >
               <Nav variant="pills" className="flex-column mt-2">
                 <Nav.Item> 
-                  <Nav.Link eventKey="first" className="font">Партнер 1</Nav.Link>
+                  <Nav.Link eventKey="first" className="font">Центр обработки данных</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second" className={styles.font}>Партнер 2</Nav.Link>
+                  <Nav.Link eventKey="second" className={styles.font}>ISS Art</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third" className={styles.font}>Партнер 3</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="fourth" className={styles.font}>Партнер 4</Nav.Link>
+                  <Nav.Link eventKey="third" className={styles.font}>SIGMA Академая</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Col>
@@ -28,10 +28,10 @@ export default function Partners() {
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Image 
-                  src="https://www.figma.com/community/plugin/906950256777348534/thumbnail" 
+                  src={COD} 
                   alt="partner picture"
                   width="1200px"
-                  height="600px"
+                  height="800px"
                   />
                   <p>
                     about partnergd dbsdbhaen sdefbadefbaebaerb aewrbgaerbaerb
@@ -39,10 +39,10 @@ export default function Partners() {
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   <Image 
-                  src="https://www.figma.com/community/plugin/906950256777348534/thumbnail" 
+                  src={ISSArt} 
                   alt="partner picture"
                   width="1200px"
-                  height="600px"
+                  height="900px"
                   />
                   <p>
                     about partneraerb raeba erbaerb aerb raebaesb
@@ -50,24 +50,13 @@ export default function Partners() {
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
                   <Image 
-                  src="https://www.figma.com/community/plugin/906950256777348534/thumbnail" 
+                  src={Sigma}
                   alt="partner picture"
                   width="1200px"
-                  height="600px"
+                  height="1000px"
                   />
                   <p>
                     about partner aesbaesbraebhsrtn ryndrndrfgnsretnaest aethsethsrethnrthn sthnsrtnhnyhnyhn ethsabhtaehse aesthnsretnrs
-                  </p>
-                </Tab.Pane>
-                <Tab.Pane eventKey="fourth">
-                  <Image 
-                  src="https://www.figma.com/community/plugin/906950256777348534/thumbnail" 
-                  alt="partner picture"
-                  width="1200px"
-                  height="600px"
-                  />
-                  <p>
-                    about partner
                   </p>
                 </Tab.Pane>
               </Tab.Content>
