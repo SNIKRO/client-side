@@ -8,7 +8,7 @@ export default function About(data) {
         <Row>
               {
                 data.employee.map(item => (
-                  <Col className="col-3 d-flex align-items-stretch" key={item.id}>
+                  <Col className="col-2 d-flex align-items-stretch" key={item.id}>
                     <MyCard key={item.id} name={item.name} title={item.title} src = {item.img} />
                   </Col>
                 ))
